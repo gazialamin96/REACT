@@ -1,0 +1,41 @@
+//ARRAY METHODS:
+
+//using filter
+numbers = [1,2,3,4,5,6,7,8,9,10];
+const filter = numbers.filter((num) => num > 3);
+console.log(filter);
+
+//USING FIND
+const find = numbers.find((num) => num > 4 )
+console.log(find)
+const find1 = numbers.find((num) => num == 4)
+console.log(find1)
+
+//USING SLICE 
+const slice = numbers.slice(3, 6);
+console.log(slice);
+
+//USING CONCAT
+const concat = numbers.concat(11,22,44,55,69);
+console.log(concat);
+
+// USING SPLICE FOR DELETE SPECIFIQUE ONE or two or more
+// Splice modify the main array modify
+const splice = numbers.splice(2,2);
+console.log(splice);
+
+// USING PUSH 
+// Splice modify the main array modify
+const push = numbers.push(59,58,54)
+console.log(push); //it's return an array size
+
+
+//map without changing the main array it gives a new array 
+const map = numbers.map((num) =>{
+  return num * 2;
+  
+});
+console.log(map);
+
+
+console.log(numbers);
